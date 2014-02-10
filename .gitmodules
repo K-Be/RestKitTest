@@ -1,0 +1,6 @@
+[submodule "vendors/restkit"]
+	path = vendors/restkit
+	url = git@github.com:RestKit/RestKit.git
+[submodule "vendors/easymapping"]
+	path = vendors/easymapping
+	url = git@github.com:lucasmedeirosleite/EasyMapping.git

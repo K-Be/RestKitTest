@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		132DA95C18A50CF500BC3F95 /* BlocksHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 132DA95B18A50CF500BC3F95 /* BlocksHelper.m */; };
+		132DA96218A50DD400BC3F95 /* RKTRestKitParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 132DA96118A50DD400BC3F95 /* RKTRestKitParsing.m */; };
+		132DA96518A5120800BC3F95 /* RKTParsingOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 132DA96418A5120800BC3F95 /* RKTParsingOperator.m */; };
+		132DA96818A5122A00BC3F95 /* RKTParsingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 132DA96718A5122A00BC3F95 /* RKTParsingResult.m */; };
+		136459351897C6C9003D8526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136459341897C6C9003D8526 /* Foundation.framework */; };
+		136459371897C6C9003D8526 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136459361897C6C9003D8526 /* CoreGraphics.framework */; };
+		136459391897C6C9003D8526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136459381897C6C9003D8526 /* UIKit.framework */; };
+		1364593F1897C6C9003D8526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1364593D1897C6C9003D8526 /* InfoPlist.strings */; };
+		136459411897C6C9003D8526 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459401897C6C9003D8526 /* main.m */; };
+		136459451897C6C9003D8526 /* RKTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459441897C6C9003D8526 /* RKTAppDelegate.m */; };
+		1364594B1897C6C9003D8526 /* RKTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1364594A1897C6C9003D8526 /* RKTViewController.m */; };
+		1364594D1897C6C9003D8526 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1364594C1897C6C9003D8526 /* Images.xcassets */; };
+		136459541897C6C9003D8526 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136459531897C6C9003D8526 /* XCTest.framework */; };
+		136459551897C6C9003D8526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136459341897C6C9003D8526 /* Foundation.framework */; };
+		136459561897C6C9003D8526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136459381897C6C9003D8526 /* UIKit.framework */; };
+		1364595E1897C6C9003D8526 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1364595C1897C6C9003D8526 /* InfoPlist.strings */; };
+		136459601897C6C9003D8526 /* RestKitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1364595F1897C6C9003D8526 /* RestKitTestTests.m */; };
+		13645AE31897C772003D8526 /* MappingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459CC1897C76A003D8526 /* MappingFactory.m */; };
+		13645AF21897C772003D8526 /* MEActivityComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459F11897C76A003D8526 /* MEActivityComment.m */; };
+		13645AF41897C772003D8526 /* MEActivityCommentMention.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459F51897C76A003D8526 /* MEActivityCommentMention.m */; };
+		13645AF51897C772003D8526 /* MEActivityCommentProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459F71897C76A003D8526 /* MEActivityCommentProfile.m */; };
+		13645AF71897C772003D8526 /* MEActivityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459FB1897C76A003D8526 /* MEActivityObject.m */; };
+		13645AF81897C772003D8526 /* MEActivityObjectPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459FD1897C76A003D8526 /* MEActivityObjectPhoto.m */; };
+		13645AF91897C772003D8526 /* MEActivityObjectPhotoTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 136459FF1897C76A003D8526 /* MEActivityObjectPhotoTag.m */; };
+		13645AFA1897C772003D8526 /* MEActivityObjectPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A011897C76A003D8526 /* MEActivityObjectPoll.m */; };
+		13645AFB1897C772003D8526 /* MEActivityObjectPollPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A031897C76A003D8526 /* MEActivityObjectPollPhoto.m */; };
+		13645AFE1897C772003D8526 /* MEActivityObjectsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A091897C76A003D8526 /* MEActivityObjectsList.m */; };
+		13645B021897C772003D8526 /* MEActivityUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A111897C76B003D8526 /* MEActivityUserProfile.m */; };
+		13645B031897C772003D8526 /* MEAPIError.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A131897C76B003D8526 /* MEAPIError.m */; };
+		13645B1F1897C772003D8526 /* MEPhotoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A4B1897C76D003D8526 /* MEPhotoSize.m */; };
+		13645B291897C772003D8526 /* MEServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A5F1897C76E003D8526 /* MEServerResponse.m */; };
+		13645B7E1897CCA9003D8526 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13645B7D1897CCA9003D8526 /* SystemConfiguration.framework */; };
+		13645B801897CCBF003D8526 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13645B7F1897CCBF003D8526 /* CFNetwork.framework */; };
+		13645B821897CCC5003D8526 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13645B811897CCC5003D8526 /* CoreData.framework */; };
+		13645B841897CCCE003D8526 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13645B831897CCCE003D8526 /* MobileCoreServices.framework */; };
+		13645B861897CCD7003D8526 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13645B851897CCD7003D8526 /* Security.framework */; };
+		13645B8D1897CEB3003D8526 /* Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645B8C1897CEB3003D8526 /* Memory.m */; };
+		138BFA8318A88BCF00663195 /* RKTHandParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BFA8218A88BCF00663195 /* RKTHandParsing.m */; };
+		138BFA8618A8938F00663195 /* EasyMappingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BFA8518A8938F00663195 /* EasyMappingFactory.m */; };
+		138BFA8918A8988A00663195 /* RKTEasyMappingParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BFA8818A8988A00663195 /* RKTEasyMappingParsing.m */; };
+		13EB66B118A39626009D876C /* jsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13EB66B018A39626009D876C /* jsonData.json */; };
+		13EB6AF418A39883009D876C /* EKFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AE618A39882009D876C /* EKFieldMapping.m */; };
+		13EB6AF518A39883009D876C /* EKManagedObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AE818A39882009D876C /* EKManagedObjectMapping.m */; };
+		13EB6AF618A39883009D876C /* EKMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AEA18A39883009D876C /* EKMapper.m */; };
+		13EB6AF718A39883009D876C /* EKObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AED18A39883009D876C /* EKObjectMapping.m */; };
+		13EB6AF818A39883009D876C /* EKPropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AEF18A39883009D876C /* EKPropertyHelper.m */; };
+		13EB6AF918A39883009D876C /* EKSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AF118A39883009D876C /* EKSerializer.m */; };
+		13EB6AFA18A39883009D876C /* EKTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AF318A39883009D876C /* EKTransformer.m */; };
+		13EB6B0E18A398BA009D876C /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EB6B0318A39893009D876C /* libRestKit.a */; };
+		13EB6B1D18A39AFB009D876C /* RKTSourceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B1C18A39AFB009D876C /* RKTSourceProvider.m */; };
+		13EB6B1F18A3A1B9009D876C /* RKTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EB6B1E18A3A1B9009D876C /* RKTViewController.xib */; };
+		13EB6B2318A3A651009D876C /* RKTJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B2218A3A651009D876C /* RKTJsonViewController.m */; };
+		13EB6B2518A3A662009D876C /* RKTJsonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */; };
+		13EB6B2818A3ABA6009D876C /* RKTParsingOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		136459571897C6C9003D8526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 136459291897C6C9003D8526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 136459301897C6C9003D8526;
+			remoteInfo = RestKitTest;
+		};
+		13EB6B0218A39893009D876C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		13EB6B0418A39893009D876C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		13EB6B0618A39893009D876C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		13EB6B0818A39893009D876C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		13EB6B0C18A398AF009D876C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		132DA95A18A50CF500BC3F95 /* BlocksHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksHelper.h; sourceTree = "<group>"; };
+		132DA95B18A50CF500BC3F95 /* BlocksHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlocksHelper.m; sourceTree = "<group>"; };
+		132DA96018A50DD400BC3F95 /* RKTRestKitParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTRestKitParsing.h; sourceTree = "<group>"; };
+		132DA96118A50DD400BC3F95 /* RKTRestKitParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTRestKitParsing.m; sourceTree = "<group>"; };
+		132DA96318A5120800BC3F95 /* RKTParsingOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTParsingOperator.h; sourceTree = "<group>"; };
+		132DA96418A5120800BC3F95 /* RKTParsingOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTParsingOperator.m; sourceTree = "<group>"; };
+		132DA96618A5122A00BC3F95 /* RKTParsingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTParsingResult.h; sourceTree = "<group>"; };
+		132DA96718A5122A00BC3F95 /* RKTParsingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTParsingResult.m; sourceTree = "<group>"; };
+		136459311897C6C9003D8526 /* RestKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		136459341897C6C9003D8526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		136459361897C6C9003D8526 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		136459381897C6C9003D8526 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1364593C1897C6C9003D8526 /* RestKitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitTest-Info.plist"; sourceTree = "<group>"; };
+		1364593E1897C6C9003D8526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		136459401897C6C9003D8526 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		136459421897C6C9003D8526 /* RestKitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestKitTest-Prefix.pch"; sourceTree = "<group>"; };
+		136459431897C6C9003D8526 /* RKTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTAppDelegate.h; sourceTree = "<group>"; };
+		136459441897C6C9003D8526 /* RKTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTAppDelegate.m; sourceTree = "<group>"; };
+		136459491897C6C9003D8526 /* RKTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTViewController.h; sourceTree = "<group>"; };
+		1364594A1897C6C9003D8526 /* RKTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTViewController.m; sourceTree = "<group>"; };
+		1364594C1897C6C9003D8526 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		136459521897C6C9003D8526 /* RestKitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestKitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		136459531897C6C9003D8526 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1364595B1897C6C9003D8526 /* RestKitTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitTestTests-Info.plist"; sourceTree = "<group>"; };
+		1364595D1897C6C9003D8526 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1364595F1897C6C9003D8526 /* RestKitTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestKitTestTests.m; sourceTree = "<group>"; };
+		136459CB1897C76A003D8526 /* MappingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MappingFactory.h; path = private/MappingFactory.h; sourceTree = "<group>"; };
+		136459CC1897C76A003D8526 /* MappingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MappingFactory.m; path = private/MappingFactory.m; sourceTree = "<group>"; };
+		136459F01897C76A003D8526 /* MEActivityComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityComment.h; sourceTree = "<group>"; };
+		136459F11897C76A003D8526 /* MEActivityComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityComment.m; sourceTree = "<group>"; };
+		136459F41897C76A003D8526 /* MEActivityCommentMention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityCommentMention.h; sourceTree = "<group>"; };
+		136459F51897C76A003D8526 /* MEActivityCommentMention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityCommentMention.m; sourceTree = "<group>"; };
+		136459F61897C76A003D8526 /* MEActivityCommentProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityCommentProfile.h; sourceTree = "<group>"; };
+		136459F71897C76A003D8526 /* MEActivityCommentProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityCommentProfile.m; sourceTree = "<group>"; };
+		136459FA1897C76A003D8526 /* MEActivityObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityObject.h; sourceTree = "<group>"; };
+		136459FB1897C76A003D8526 /* MEActivityObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityObject.m; sourceTree = "<group>"; };
+		136459FC1897C76A003D8526 /* MEActivityObjectPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityObjectPhoto.h; sourceTree = "<group>"; };
+		136459FD1897C76A003D8526 /* MEActivityObjectPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityObjectPhoto.m; sourceTree = "<group>"; };
+		136459FE1897C76A003D8526 /* MEActivityObjectPhotoTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityObjectPhotoTag.h; sourceTree = "<group>"; };
+		136459FF1897C76A003D8526 /* MEActivityObjectPhotoTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityObjectPhotoTag.m; sourceTree = "<group>"; };
+		13645A001897C76A003D8526 /* MEActivityObjectPoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityObjectPoll.h; sourceTree = "<group>"; };
+		13645A011897C76A003D8526 /* MEActivityObjectPoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityObjectPoll.m; sourceTree = "<group>"; };
+		13645A021897C76A003D8526 /* MEActivityObjectPollPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityObjectPollPhoto.h; sourceTree = "<group>"; };
+		13645A031897C76A003D8526 /* MEActivityObjectPollPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityObjectPollPhoto.m; sourceTree = "<group>"; };
+		13645A081897C76A003D8526 /* MEActivityObjectsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityObjectsList.h; sourceTree = "<group>"; };
+		13645A091897C76A003D8526 /* MEActivityObjectsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityObjectsList.m; sourceTree = "<group>"; };
+		13645A101897C76B003D8526 /* MEActivityUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEActivityUserProfile.h; sourceTree = "<group>"; };
+		13645A111897C76B003D8526 /* MEActivityUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEActivityUserProfile.m; sourceTree = "<group>"; };
+		13645A121897C76B003D8526 /* MEAPIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAPIError.h; sourceTree = "<group>"; };
+		13645A131897C76B003D8526 /* MEAPIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEAPIError.m; sourceTree = "<group>"; };
+		13645A4A1897C76D003D8526 /* MEPhotoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEPhotoSize.h; sourceTree = "<group>"; };
+		13645A4B1897C76D003D8526 /* MEPhotoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEPhotoSize.m; sourceTree = "<group>"; };
+		13645A5E1897C76D003D8526 /* MEServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEServerResponse.h; sourceTree = "<group>"; };
+		13645A5F1897C76E003D8526 /* MEServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEServerResponse.m; sourceTree = "<group>"; };
+		13645A921897C770003D8526 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		13645B7D1897CCA9003D8526 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		13645B7F1897CCBF003D8526 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		13645B811897CCC5003D8526 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		13645B831897CCCE003D8526 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		13645B851897CCD7003D8526 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		13645B8B1897CEB3003D8526 /* Memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memory.h; sourceTree = "<group>"; };
+		13645B8C1897CEB3003D8526 /* Memory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memory.m; sourceTree = "<group>"; };
+		138BFA8118A88BCF00663195 /* RKTHandParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTHandParsing.h; sourceTree = "<group>"; };
+		138BFA8218A88BCF00663195 /* RKTHandParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTHandParsing.m; sourceTree = "<group>"; };
+		138BFA8418A8938F00663195 /* EasyMappingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyMappingFactory.h; sourceTree = "<group>"; };
+		138BFA8518A8938F00663195 /* EasyMappingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyMappingFactory.m; sourceTree = "<group>"; };
+		138BFA8718A8988A00663195 /* RKTEasyMappingParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTEasyMappingParsing.h; sourceTree = "<group>"; };
+		138BFA8818A8988A00663195 /* RKTEasyMappingParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTEasyMappingParsing.m; sourceTree = "<group>"; };
+		13EB66B018A39626009D876C /* jsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonData.json; sourceTree = "<group>"; };
+		13EB6AE418A39882009D876C /* EasyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyMapping.h; sourceTree = "<group>"; };
+		13EB6AE518A39882009D876C /* EKFieldMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKFieldMapping.h; sourceTree = "<group>"; };
+		13EB6AE618A39882009D876C /* EKFieldMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKFieldMapping.m; sourceTree = "<group>"; };
+		13EB6AE718A39882009D876C /* EKManagedObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKManagedObjectMapping.h; sourceTree = "<group>"; };
+		13EB6AE818A39882009D876C /* EKManagedObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKManagedObjectMapping.m; sourceTree = "<group>"; };
+		13EB6AE918A39882009D876C /* EKMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMapper.h; sourceTree = "<group>"; };
+		13EB6AEA18A39883009D876C /* EKMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKMapper.m; sourceTree = "<group>"; };
+		13EB6AEB18A39883009D876C /* EKMappingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMappingBlocks.h; sourceTree = "<group>"; };
+		13EB6AEC18A39883009D876C /* EKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKObjectMapping.h; sourceTree = "<group>"; };
+		13EB6AED18A39883009D876C /* EKObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKObjectMapping.m; sourceTree = "<group>"; };
+		13EB6AEE18A39883009D876C /* EKPropertyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKPropertyHelper.h; sourceTree = "<group>"; };
+		13EB6AEF18A39883009D876C /* EKPropertyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKPropertyHelper.m; sourceTree = "<group>"; };
+		13EB6AF018A39883009D876C /* EKSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKSerializer.h; sourceTree = "<group>"; };
+		13EB6AF118A39883009D876C /* EKSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKSerializer.m; sourceTree = "<group>"; };
+		13EB6AF218A39883009D876C /* EKTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKTransformer.h; sourceTree = "<group>"; };
+		13EB6AF318A39883009D876C /* EKTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKTransformer.m; sourceTree = "<group>"; };
+		13EB6AFB18A39892009D876C /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RestKit.xcodeproj; sourceTree = "<group>"; };
+		13EB6B1B18A39AFB009D876C /* RKTSourceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTSourceProvider.h; sourceTree = "<group>"; };
+		13EB6B1C18A39AFB009D876C /* RKTSourceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTSourceProvider.m; sourceTree = "<group>"; };
+		13EB6B1E18A3A1B9009D876C /* RKTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTViewController.xib; sourceTree = "<group>"; };
+		13EB6B2118A3A651009D876C /* RKTJsonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTJsonViewController.h; sourceTree = "<group>"; };
+		13EB6B2218A3A651009D876C /* RKTJsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTJsonViewController.m; sourceTree = "<group>"; };
+		13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTJsonViewController.xib; sourceTree = "<group>"; };
+		13EB6B2618A3ABA6009D876C /* RKTParsingOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTParsingOperationBase.h; sourceTree = "<group>"; };
+		13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTParsingOperationBase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1364592E1897C6C9003D8526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EB6B0E18A398BA009D876C /* libRestKit.a in Frameworks */,
+				13645B861897CCD7003D8526 /* Security.framework in Frameworks */,
+				13645B841897CCCE003D8526 /* MobileCoreServices.framework in Frameworks */,
+				13645B821897CCC5003D8526 /* CoreData.framework in Frameworks */,
+				13645B801897CCBF003D8526 /* CFNetwork.framework in Frameworks */,
+				13645B7E1897CCA9003D8526 /* SystemConfiguration.framework in Frameworks */,
+				136459371897C6C9003D8526 /* CoreGraphics.framework in Frameworks */,
+				136459391897C6C9003D8526 /* UIKit.framework in Frameworks */,
+				136459351897C6C9003D8526 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1364594F1897C6C9003D8526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136459541897C6C9003D8526 /* XCTest.framework in Frameworks */,
+				136459561897C6C9003D8526 /* UIKit.framework in Frameworks */,
+				136459551897C6C9003D8526 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		132DA95918A50CF500BC3F95 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				132DA95A18A50CF500BC3F95 /* BlocksHelper.h */,
+				132DA95B18A50CF500BC3F95 /* BlocksHelper.m */,
+			);
+			name = Blocks;
+			path = libs/Blocks;
+			sourceTree = SOURCE_ROOT;
+		};
+		136459281897C6C9003D8526 = {
+			isa = PBXGroup;
+			children = (
+				13EB66B518A3986A009D876C /* vendors */,
+				13EB66AF18A39626009D876C /* resourses */,
+				1364593A1897C6C9003D8526 /* RestKitTest */,
+				136459591897C6C9003D8526 /* RestKitTestTests */,
+				136459331897C6C9003D8526 /* Frameworks */,
+				136459321897C6C9003D8526 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		136459321897C6C9003D8526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				136459311897C6C9003D8526 /* RestKitTest.app */,
+				136459521897C6C9003D8526 /* RestKitTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		136459331897C6C9003D8526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13645B851897CCD7003D8526 /* Security.framework */,
+				13645B831897CCCE003D8526 /* MobileCoreServices.framework */,
+				13645B811897CCC5003D8526 /* CoreData.framework */,
+				13645B7F1897CCBF003D8526 /* CFNetwork.framework */,
+				13645B7D1897CCA9003D8526 /* SystemConfiguration.framework */,
+				136459341897C6C9003D8526 /* Foundation.framework */,
+				136459361897C6C9003D8526 /* CoreGraphics.framework */,
+				136459381897C6C9003D8526 /* UIKit.framework */,
+				136459531897C6C9003D8526 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1364593A1897C6C9003D8526 /* RestKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				132DA95918A50CF500BC3F95 /* Blocks */,
+				13EB6B2018A3A399009D876C /* parsingoperations */,
+				13645B8A1897CEB3003D8526 /* Memory */,
+				1364597C1897C769003D8526 /* api */,
+				136459EF1897C76A003D8526 /* modelelements */,
+				136459431897C6C9003D8526 /* RKTAppDelegate.h */,
+				136459441897C6C9003D8526 /* RKTAppDelegate.m */,
+				132DA96318A5120800BC3F95 /* RKTParsingOperator.h */,
+				132DA96418A5120800BC3F95 /* RKTParsingOperator.m */,
+				132DA96618A5122A00BC3F95 /* RKTParsingResult.h */,
+				132DA96718A5122A00BC3F95 /* RKTParsingResult.m */,
+				136459491897C6C9003D8526 /* RKTViewController.h */,
+				1364594A1897C6C9003D8526 /* RKTViewController.m */,
+				13EB6B1E18A3A1B9009D876C /* RKTViewController.xib */,
+				13EB6B2118A3A651009D876C /* RKTJsonViewController.h */,
+				13EB6B2218A3A651009D876C /* RKTJsonViewController.m */,
+				13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */,
+				13EB6B1B18A39AFB009D876C /* RKTSourceProvider.h */,
+				13EB6B1C18A39AFB009D876C /* RKTSourceProvider.m */,
+				1364594C1897C6C9003D8526 /* Images.xcassets */,
+				1364593B1897C6C9003D8526 /* Supporting Files */,
+			);
+			path = RestKitTest;
+			sourceTree = "<group>";
+		};
+		1364593B1897C6C9003D8526 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1364593C1897C6C9003D8526 /* RestKitTest-Info.plist */,
+				1364593D1897C6C9003D8526 /* InfoPlist.strings */,
+				136459401897C6C9003D8526 /* main.m */,
+				136459421897C6C9003D8526 /* RestKitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		136459591897C6C9003D8526 /* RestKitTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				1364595F1897C6C9003D8526 /* RestKitTestTests.m */,
+				1364595A1897C6C9003D8526 /* Supporting Files */,
+			);
+			path = RestKitTestTests;
+			sourceTree = "<group>";
+		};
+		1364595A1897C6C9003D8526 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1364595B1897C6C9003D8526 /* RestKitTestTests-Info.plist */,
+				1364595C1897C6C9003D8526 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1364597C1897C769003D8526 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				136459CB1897C76A003D8526 /* MappingFactory.h */,
+				136459CC1897C76A003D8526 /* MappingFactory.m */,
+				138BFA8418A8938F00663195 /* EasyMappingFactory.h */,
+				138BFA8518A8938F00663195 /* EasyMappingFactory.m */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		136459EF1897C76A003D8526 /* modelelements */ = {
+			isa = PBXGroup;
+			children = (
+				136459F01897C76A003D8526 /* MEActivityComment.h */,
+				136459F11897C76A003D8526 /* MEActivityComment.m */,
+				136459F41897C76A003D8526 /* MEActivityCommentMention.h */,
+				136459F51897C76A003D8526 /* MEActivityCommentMention.m */,
+				136459F61897C76A003D8526 /* MEActivityCommentProfile.h */,
+				136459F71897C76A003D8526 /* MEActivityCommentProfile.m */,
+				136459FA1897C76A003D8526 /* MEActivityObject.h */,
+				136459FB1897C76A003D8526 /* MEActivityObject.m */,
+				136459FC1897C76A003D8526 /* MEActivityObjectPhoto.h */,
+				136459FD1897C76A003D8526 /* MEActivityObjectPhoto.m */,
+				136459FE1897C76A003D8526 /* MEActivityObjectPhotoTag.h */,
+				136459FF1897C76A003D8526 /* MEActivityObjectPhotoTag.m */,
+				13645A001897C76A003D8526 /* MEActivityObjectPoll.h */,
+				13645A011897C76A003D8526 /* MEActivityObjectPoll.m */,
+				13645A021897C76A003D8526 /* MEActivityObjectPollPhoto.h */,
+				13645A031897C76A003D8526 /* MEActivityObjectPollPhoto.m */,
+				13645A081897C76A003D8526 /* MEActivityObjectsList.h */,
+				13645A091897C76A003D8526 /* MEActivityObjectsList.m */,
+				13645A101897C76B003D8526 /* MEActivityUserProfile.h */,
+				13645A111897C76B003D8526 /* MEActivityUserProfile.m */,
+				13645A121897C76B003D8526 /* MEAPIError.h */,
+				13645A131897C76B003D8526 /* MEAPIError.m */,
+				13645A4A1897C76D003D8526 /* MEPhotoSize.h */,
+				13645A4B1897C76D003D8526 /* MEPhotoSize.m */,
+				13645A5E1897C76D003D8526 /* MEServerResponse.h */,
+				13645A5F1897C76E003D8526 /* MEServerResponse.m */,
+				13645A921897C770003D8526 /* Model.h */,
+			);
+			path = modelelements;
+			sourceTree = "<group>";
+		};
+		13645B8A1897CEB3003D8526 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				13645B8B1897CEB3003D8526 /* Memory.h */,
+				13645B8C1897CEB3003D8526 /* Memory.m */,
+			);
+			name = Memory;
+			path = libs/Memory;
+			sourceTree = SOURCE_ROOT;
+		};
+		13EB66AF18A39626009D876C /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				13EB66B018A39626009D876C /* jsonData.json */,
+			);
+			path = resourses;
+			sourceTree = "<group>";
+		};
+		13EB66B518A3986A009D876C /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				13EB66B618A3986A009D876C /* easymapping */,
+				13EB673B18A3986B009D876C /* restkit */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		13EB66B618A3986A009D876C /* easymapping */ = {
+			isa = PBXGroup;
+			children = (
+				13EB6AE318A39882009D876C /* EasyMapping */,
+			);
+			path = easymapping;
+			sourceTree = "<group>";
+		};
+		13EB673B18A3986B009D876C /* restkit */ = {
+			isa = PBXGroup;
+			children = (
+				13EB6AFB18A39892009D876C /* RestKit.xcodeproj */,
+			);
+			path = restkit;
+			sourceTree = "<group>";
+		};
+		13EB6AE318A39882009D876C /* EasyMapping */ = {
+			isa = PBXGroup;
+			children = (
+				13EB6AE418A39882009D876C /* EasyMapping.h */,
+				13EB6AE518A39882009D876C /* EKFieldMapping.h */,
+				13EB6AE618A39882009D876C /* EKFieldMapping.m */,
+				13EB6AE718A39882009D876C /* EKManagedObjectMapping.h */,
+				13EB6AE818A39882009D876C /* EKManagedObjectMapping.m */,
+				13EB6AE918A39882009D876C /* EKMapper.h */,
+				13EB6AEA18A39883009D876C /* EKMapper.m */,
+				13EB6AEB18A39883009D876C /* EKMappingBlocks.h */,
+				13EB6AEC18A39883009D876C /* EKObjectMapping.h */,
+				13EB6AED18A39883009D876C /* EKObjectMapping.m */,
+				13EB6AEE18A39883009D876C /* EKPropertyHelper.h */,
+				13EB6AEF18A39883009D876C /* EKPropertyHelper.m */,
+				13EB6AF018A39883009D876C /* EKSerializer.h */,
+				13EB6AF118A39883009D876C /* EKSerializer.m */,
+				13EB6AF218A39883009D876C /* EKTransformer.h */,
+				13EB6AF318A39883009D876C /* EKTransformer.m */,
+			);
+			path = EasyMapping;
+			sourceTree = "<group>";
+		};
+		13EB6AFC18A39892009D876C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13EB6B0318A39893009D876C /* libRestKit.a */,
+				13EB6B0518A39893009D876C /* RestKitTests.octest */,
+				13EB6B0718A39893009D876C /* RestKit.framework */,
+				13EB6B0918A39893009D876C /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13EB6B2018A3A399009D876C /* parsingoperations */ = {
+			isa = PBXGroup;
+			children = (
+				13EB6B2618A3ABA6009D876C /* RKTParsingOperationBase.h */,
+				13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */,
+				132DA96018A50DD400BC3F95 /* RKTRestKitParsing.h */,
+				132DA96118A50DD400BC3F95 /* RKTRestKitParsing.m */,
+				138BFA8118A88BCF00663195 /* RKTHandParsing.h */,
+				138BFA8218A88BCF00663195 /* RKTHandParsing.m */,
+				138BFA8718A8988A00663195 /* RKTEasyMappingParsing.h */,
+				138BFA8818A8988A00663195 /* RKTEasyMappingParsing.m */,
+			);
+			path = parsingoperations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		136459301897C6C9003D8526 /* RestKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136459631897C6C9003D8526 /* Build configuration list for PBXNativeTarget "RestKitTest" */;
+			buildPhases = (
+				1364592D1897C6C9003D8526 /* Sources */,
+				1364592E1897C6C9003D8526 /* Frameworks */,
+				1364592F1897C6C9003D8526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13EB6B0D18A398AF009D876C /* PBXTargetDependency */,
+			);
+			name = RestKitTest;
+			productName = RestKitTest;
+			productReference = 136459311897C6C9003D8526 /* RestKitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		136459511897C6C9003D8526 /* RestKitTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136459661897C6C9003D8526 /* Build configuration list for PBXNativeTarget "RestKitTestTests" */;
+			buildPhases = (
+				1364594E1897C6C9003D8526 /* Sources */,
+				1364594F1897C6C9003D8526 /* Frameworks */,
+				136459501897C6C9003D8526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				136459581897C6C9003D8526 /* PBXTargetDependency */,
+			);
+			name = RestKitTestTests;
+			productName = RestKitTestTests;
+			productReference = 136459521897C6C9003D8526 /* RestKitTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		136459291897C6C9003D8526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RKT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Andrew Romanov";
+				TargetAttributes = {
+					136459511897C6C9003D8526 = {
+						TestTargetID = 136459301897C6C9003D8526;
+					};
+				};
+			};
+			buildConfigurationList = 1364592C1897C6C9003D8526 /* Build configuration list for PBXProject "RestKitTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 136459281897C6C9003D8526;
+			productRefGroup = 136459321897C6C9003D8526 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 13EB6AFC18A39892009D876C /* Products */;
+					ProjectRef = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				136459301897C6C9003D8526 /* RestKitTest */,
+				136459511897C6C9003D8526 /* RestKitTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		13EB6B0318A39893009D876C /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 13EB6B0218A39893009D876C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		13EB6B0518A39893009D876C /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 13EB6B0418A39893009D876C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		13EB6B0718A39893009D876C /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 13EB6B0618A39893009D876C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		13EB6B0918A39893009D876C /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 13EB6B0818A39893009D876C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1364592F1897C6C9003D8526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1364594D1897C6C9003D8526 /* Images.xcassets in Resources */,
+				13EB66B118A39626009D876C /* jsonData.json in Resources */,
+				13EB6B2518A3A662009D876C /* RKTJsonViewController.xib in Resources */,
+				13EB6B1F18A3A1B9009D876C /* RKTViewController.xib in Resources */,
+				1364593F1897C6C9003D8526 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		136459501897C6C9003D8526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1364595E1897C6C9003D8526 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1364592D1897C6C9003D8526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13645AF81897C772003D8526 /* MEActivityObjectPhoto.m in Sources */,
+				13645AF51897C772003D8526 /* MEActivityCommentProfile.m in Sources */,
+				13645B021897C772003D8526 /* MEActivityUserProfile.m in Sources */,
+				13645B1F1897C772003D8526 /* MEPhotoSize.m in Sources */,
+				13EB6AF818A39883009D876C /* EKPropertyHelper.m in Sources */,
+				132DA96218A50DD400BC3F95 /* RKTRestKitParsing.m in Sources */,
+				1364594B1897C6C9003D8526 /* RKTViewController.m in Sources */,
+				132DA96518A5120800BC3F95 /* RKTParsingOperator.m in Sources */,
+				132DA95C18A50CF500BC3F95 /* BlocksHelper.m in Sources */,
+				138BFA8318A88BCF00663195 /* RKTHandParsing.m in Sources */,
+				13645AFE1897C772003D8526 /* MEActivityObjectsList.m in Sources */,
+				13EB6AF918A39883009D876C /* EKSerializer.m in Sources */,
+				138BFA8918A8988A00663195 /* RKTEasyMappingParsing.m in Sources */,
+				13645AFB1897C772003D8526 /* MEActivityObjectPollPhoto.m in Sources */,
+				13EB6AFA18A39883009D876C /* EKTransformer.m in Sources */,
+				132DA96818A5122A00BC3F95 /* RKTParsingResult.m in Sources */,
+				13EB6B1D18A39AFB009D876C /* RKTSourceProvider.m in Sources */,
+				13EB6AF618A39883009D876C /* EKMapper.m in Sources */,
+				13EB6AF518A39883009D876C /* EKManagedObjectMapping.m in Sources */,
+				13645AF41897C772003D8526 /* MEActivityCommentMention.m in Sources */,
+				138BFA8618A8938F00663195 /* EasyMappingFactory.m in Sources */,
+				13EB6AF418A39883009D876C /* EKFieldMapping.m in Sources */,
+				13645AFA1897C772003D8526 /* MEActivityObjectPoll.m in Sources */,
+				13645AF91897C772003D8526 /* MEActivityObjectPhotoTag.m in Sources */,
+				13EB6B2318A3A651009D876C /* RKTJsonViewController.m in Sources */,
+				13645AF71897C772003D8526 /* MEActivityObject.m in Sources */,
+				136459451897C6C9003D8526 /* RKTAppDelegate.m in Sources */,
+				13EB6AF718A39883009D876C /* EKObjectMapping.m in Sources */,
+				13645B031897C772003D8526 /* MEAPIError.m in Sources */,
+				13645AE31897C772003D8526 /* MappingFactory.m in Sources */,
+				13645AF21897C772003D8526 /* MEActivityComment.m in Sources */,
+				13EB6B2818A3ABA6009D876C /* RKTParsingOperationBase.m in Sources */,
+				13645B291897C772003D8526 /* MEServerResponse.m in Sources */,
+				136459411897C6C9003D8526 /* main.m in Sources */,
+				13645B8D1897CEB3003D8526 /* Memory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1364594E1897C6C9003D8526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				136459601897C6C9003D8526 /* RestKitTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		136459581897C6C9003D8526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 136459301897C6C9003D8526 /* RestKitTest */;
+			targetProxy = 136459571897C6C9003D8526 /* PBXContainerItemProxy */;
+		};
+		13EB6B0D18A398AF009D876C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 13EB6B0C18A398AF009D876C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1364593D1897C6C9003D8526 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1364593E1897C6C9003D8526 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1364595C1897C6C9003D8526 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1364595D1897C6C9003D8526 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		136459611897C6C9003D8526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		136459621897C6C9003D8526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		136459641897C6C9003D8526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = "RestKitTest/RestKitTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		136459651897C6C9003D8526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = "RestKitTest/RestKitTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		136459671897C6C9003D8526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RestKitTest.app/RestKitTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RestKitTestTests/RestKitTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		136459681897C6C9003D8526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RestKitTest.app/RestKitTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
+				INFOPLIST_FILE = "RestKitTestTests/RestKitTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1364592C1897C6C9003D8526 /* Build configuration list for PBXProject "RestKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136459611897C6C9003D8526 /* Debug */,
+				136459621897C6C9003D8526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		136459631897C6C9003D8526 /* Build configuration list for PBXNativeTarget "RestKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136459641897C6C9003D8526 /* Debug */,
+				136459651897C6C9003D8526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		136459661897C6C9003D8526 /* Build configuration list for PBXNativeTarget "RestKitTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136459671897C6C9003D8526 /* Debug */,
+				136459681897C6C9003D8526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 136459291897C6C9003D8526 /* Project object */;
+}
