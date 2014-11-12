@@ -32,7 +32,8 @@
 {
 	if (self = [super init])
 	{
-		_parsingTime = 0.0;
+		_averageTime = 0.0;
+		_numberOfAttempts = 20;
 	}
 	
 	return self;
@@ -45,11 +46,25 @@
 	{
 		[self _prepareMappingModel];
 		
-		NSDate* startTime = [NSDate date];
-		_parsingResult = [self _makeMapping];
-		NSDate* endParsingTime = [NSDate date];
-		
-		_parsingTime = [endParsingTime timeIntervalSinceDate:startTime];
+		if (_numberOfAttempts > 0)
+		{
+			
+			NSTimeInterval timeInterval = 0.0;
+			for (NSInteger i = 0; i < _numberOfAttempts; i++)
+			{
+				NSDate* startTime = [NSDate date];
+				_parsingResult = [self _makeMapping];
+				NSDate* endParsingTime = [NSDate date];
+				
+				timeInterval += [endParsingTime timeIntervalSinceDate:startTime];
+			}
+			
+			_averageTime = timeInterval / _numberOfAttempts;
+		}
+		else
+		{
+			_averageTime = NSNotFound;
+		}
 		
 		[self validateParsingResult];
 		

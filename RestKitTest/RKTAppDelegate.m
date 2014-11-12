@@ -17,8 +17,6 @@
 {
 	RKLogConfigureByName("*", RKLogLevelOff)
 	
-	_globalQueue = [[NSOperationQueue alloc] init];
-	
 	RKTViewController* vk = [RKTViewController controller];
 	UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:vk];
 	_window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

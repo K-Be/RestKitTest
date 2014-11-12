@@ -21,6 +21,7 @@
 @property (nonatomic, strong) IBOutlet UILabel* parceByEasyMappingResultLabel;
 @property (nonatomic, strong) IBOutlet UILabel* parceByRestKitResult;
 @property (nonatomic, strong) UIBarButtonItem* showJsonButton;
+@property (nonatomic, strong) NSOperationQueue* parsingQueue;
 
 @property (nonatomic, strong) RKTParsingOperator* parsingOperator;
 
@@ -41,6 +42,19 @@
 
 @implementation RKTViewController
 
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
+	{
+		_parsingQueue = [[NSOperationQueue alloc] init];
+		_parsingQueue.maxConcurrentOperationCount = 1;
+	}
+	
+	return self;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -55,10 +69,11 @@
 	
 	_parsingOperator = [[RKTParsingOperator alloc] init];
 	_parsingOperator.delegate = self;
-	_parsingOperator.queue = [(RKTAppDelegate*)[UIApplication sharedApplication].delegate globalQueue];
+	_parsingOperator.queue = _parsingQueue;
 	RKTSourceProvider* sourceProvider = [[RKTSourceProvider alloc] init];
 	_parsingOperator.source = [sourceProvider loadSource];
 	
+	[self _clearResultLabels];
 }
 
 

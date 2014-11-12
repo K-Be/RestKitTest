@@ -39,16 +39,14 @@
 	_handParsing = [[RKTHandParsing alloc] init];
 	_handParsing.source = _source;
 	_handParsing.delegate = self;
-	[_handParsing addDependency:_parsingRestKit];
 	
 	_easyMappingParsing = [[RKTEasyMappingParsing alloc] init];
 	_easyMappingParsing.source = _source;
 	_easyMappingParsing.delegate = self;
-	[_easyMappingParsing addDependency:_handParsing];
 	
-	[self.queue addOperation:_parsingRestKit];
 	[self.queue addOperation:_handParsing];
 	[self.queue addOperation:_easyMappingParsing];
+	[self.queue addOperation:_parsingRestKit];
 }
 
 
@@ -90,7 +88,7 @@
 - (void)finishedParsingWithOepration:(RKTParsingOperationBase*)operationPtr resultType:(RKTParsingType)resultType
 {
 	RKTParsingResult* result = [RKTParsingResult parsingResultWithType:resultType
-																					  time:operationPtr.parsingTime
+																					  time:operationPtr.averageTime
 																				successed:operationPtr.successed];
 	[self.delegate rktParsingOperator:self finishedParsingWithResult:result];
 }

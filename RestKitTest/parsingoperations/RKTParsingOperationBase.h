@@ -15,9 +15,10 @@
 @interface RKTParsingOperationBase : NSOperation
 
 @property (nonatomic, weak) id<RKTParsingOperationBaseDelegate> delegate;
+@property (nonatomic) NSInteger numberOfAttempts;
 @property (nonatomic, strong) NSDictionary* source;
 
-@property (nonatomic, readonly) NSTimeInterval parsingTime;
+@property (nonatomic, readonly) NSTimeInterval averageTime;
 @property (nonatomic, readonly) BOOL successed;
 
 @end
