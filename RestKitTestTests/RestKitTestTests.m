@@ -8,9 +8,15 @@
 
 #import <XCTest/XCTest.h>
 
+
+
+
 @interface RestKitTestTests : XCTestCase
 
+@property (nonatomic, strong) NSDictionary* source;
+
 @end
+
 
 @implementation RestKitTestTests
 
@@ -29,6 +35,16 @@
 - (void)testExample
 {
     XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+
+- (void)testPerformanceBackForward
+{
+	// This is an example of a performance test case.
+	[self measureBlock:^{
+		
+		
+	}];
 }
 
 @end

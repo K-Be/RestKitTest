@@ -525,6 +525,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Andrew Romanov";
 				TargetAttributes = {
+					136459301897C6C9003D8526 = {
+						DevelopmentTeam = BNNY5D4LGB;
+					};
 					136459511897C6C9003D8526 = {
 						TestTargetID = 136459301897C6C9003D8526;
 					};
@@ -566,7 +569,7 @@
 		13EB6B0518A39893009D876C /* RestKitTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = RestKitTests.octest;
+			path = RestKitTests.xctest;
 			remoteRef = 13EB6B0418A39893009D876C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -580,7 +583,7 @@
 		13EB6B0918A39893009D876C /* RestKitFrameworkTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = RestKitFrameworkTests.octest;
+			path = RestKitFrameworkTests.xctest;
 			remoteRef = 13EB6B0818A39893009D876C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -772,6 +775,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -795,6 +799,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
