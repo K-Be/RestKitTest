@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EasyMapping.h"
+#import <EasyMapping.h>
 #import "Model.h"
 
 

@@ -48,19 +48,14 @@
 		138BFA8618A8938F00663195 /* EasyMappingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BFA8518A8938F00663195 /* EasyMappingFactory.m */; };
 		138BFA8918A8988A00663195 /* RKTEasyMappingParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 138BFA8818A8988A00663195 /* RKTEasyMappingParsing.m */; };
 		13EB66B118A39626009D876C /* jsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13EB66B018A39626009D876C /* jsonData.json */; };
-		13EB6AF418A39883009D876C /* EKFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AE618A39882009D876C /* EKFieldMapping.m */; };
-		13EB6AF518A39883009D876C /* EKManagedObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AE818A39882009D876C /* EKManagedObjectMapping.m */; };
-		13EB6AF618A39883009D876C /* EKMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AEA18A39883009D876C /* EKMapper.m */; };
-		13EB6AF718A39883009D876C /* EKObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AED18A39883009D876C /* EKObjectMapping.m */; };
-		13EB6AF818A39883009D876C /* EKPropertyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AEF18A39883009D876C /* EKPropertyHelper.m */; };
-		13EB6AF918A39883009D876C /* EKSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AF118A39883009D876C /* EKSerializer.m */; };
-		13EB6AFA18A39883009D876C /* EKTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6AF318A39883009D876C /* EKTransformer.m */; };
-		13EB6B0E18A398BA009D876C /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EB6B0318A39893009D876C /* libRestKit.a */; };
 		13EB6B1D18A39AFB009D876C /* RKTSourceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B1C18A39AFB009D876C /* RKTSourceProvider.m */; };
 		13EB6B1F18A3A1B9009D876C /* RKTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EB6B1E18A3A1B9009D876C /* RKTViewController.xib */; };
 		13EB6B2318A3A651009D876C /* RKTJsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B2218A3A651009D876C /* RKTJsonViewController.m */; };
 		13EB6B2518A3A662009D876C /* RKTJsonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */; };
 		13EB6B2818A3ABA6009D876C /* RKTParsingOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */; };
+		2EB13DB8F1F5F90E34BCE4C1 /* libPods-RestKitTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6622048DEB2E230181BE7 /* libPods-RestKitTestTests.a */; };
+		49BBFF4D1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BBFF4C1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m */; };
+		8F0EFC45604C3B10DA7E670D /* libPods-RestKitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB294A5C36FC56E09DBB2A3B /* libPods-RestKitTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,41 +65,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 136459301897C6C9003D8526;
 			remoteInfo = RestKitTest;
-		};
-		13EB6B0218A39893009D876C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160D1614564E810060A5C5;
-			remoteInfo = RestKit;
-		};
-		13EB6B0418A39893009D876C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160D2614564E820060A5C5;
-			remoteInfo = RestKitTests;
-		};
-		13EB6B0618A39893009D876C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160E62145651060060A5C5;
-			remoteInfo = RestKitFramework;
-		};
-		13EB6B0818A39893009D876C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160E78145651060060A5C5;
-			remoteInfo = RestKitFrameworkTests;
-		};
-		13EB6B0C18A398AF009D876C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 25160D1514564E810060A5C5;
-			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -178,23 +138,6 @@
 		138BFA8718A8988A00663195 /* RKTEasyMappingParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTEasyMappingParsing.h; sourceTree = "<group>"; };
 		138BFA8818A8988A00663195 /* RKTEasyMappingParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTEasyMappingParsing.m; sourceTree = "<group>"; };
 		13EB66B018A39626009D876C /* jsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonData.json; sourceTree = "<group>"; };
-		13EB6AE418A39882009D876C /* EasyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyMapping.h; sourceTree = "<group>"; };
-		13EB6AE518A39882009D876C /* EKFieldMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKFieldMapping.h; sourceTree = "<group>"; };
-		13EB6AE618A39882009D876C /* EKFieldMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKFieldMapping.m; sourceTree = "<group>"; };
-		13EB6AE718A39882009D876C /* EKManagedObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKManagedObjectMapping.h; sourceTree = "<group>"; };
-		13EB6AE818A39882009D876C /* EKManagedObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKManagedObjectMapping.m; sourceTree = "<group>"; };
-		13EB6AE918A39882009D876C /* EKMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMapper.h; sourceTree = "<group>"; };
-		13EB6AEA18A39883009D876C /* EKMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKMapper.m; sourceTree = "<group>"; };
-		13EB6AEB18A39883009D876C /* EKMappingBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKMappingBlocks.h; sourceTree = "<group>"; };
-		13EB6AEC18A39883009D876C /* EKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKObjectMapping.h; sourceTree = "<group>"; };
-		13EB6AED18A39883009D876C /* EKObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKObjectMapping.m; sourceTree = "<group>"; };
-		13EB6AEE18A39883009D876C /* EKPropertyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKPropertyHelper.h; sourceTree = "<group>"; };
-		13EB6AEF18A39883009D876C /* EKPropertyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKPropertyHelper.m; sourceTree = "<group>"; };
-		13EB6AF018A39883009D876C /* EKSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKSerializer.h; sourceTree = "<group>"; };
-		13EB6AF118A39883009D876C /* EKSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKSerializer.m; sourceTree = "<group>"; };
-		13EB6AF218A39883009D876C /* EKTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EKTransformer.h; sourceTree = "<group>"; };
-		13EB6AF318A39883009D876C /* EKTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EKTransformer.m; sourceTree = "<group>"; };
-		13EB6AFB18A39892009D876C /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RestKit.xcodeproj; sourceTree = "<group>"; };
 		13EB6B1B18A39AFB009D876C /* RKTSourceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTSourceProvider.h; sourceTree = "<group>"; };
 		13EB6B1C18A39AFB009D876C /* RKTSourceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTSourceProvider.m; sourceTree = "<group>"; };
 		13EB6B1E18A3A1B9009D876C /* RKTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTViewController.xib; sourceTree = "<group>"; };
@@ -203,6 +146,14 @@
 		13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTJsonViewController.xib; sourceTree = "<group>"; };
 		13EB6B2618A3ABA6009D876C /* RKTParsingOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTParsingOperationBase.h; sourceTree = "<group>"; };
 		13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTParsingOperationBase.m; sourceTree = "<group>"; };
+		49BBFF4B1DEEC4E500C54310 /* EKObjectMapping+RKTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EKObjectMapping+RKTCategory.h"; sourceTree = "<group>"; };
+		49BBFF4C1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EKObjectMapping+RKTCategory.m"; sourceTree = "<group>"; };
+		5376A9F1A6371AF1967DA9FC /* Pods-RestKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestKitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestKitTest/Pods-RestKitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		81D6738EC917B2C19DAC7A04 /* Pods-RestKitTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestKitTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestKitTestTests/Pods-RestKitTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C85B8ACBBCC7CA8A475865B /* Pods-RestKitTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestKitTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestKitTestTests/Pods-RestKitTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3B6622048DEB2E230181BE7 /* libPods-RestKitTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RestKitTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB294A5C36FC56E09DBB2A3B /* libPods-RestKitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RestKitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DAFBE12BBD746D2C95D502 /* Pods-RestKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestKitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RestKitTest/Pods-RestKitTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13EB6B0E18A398BA009D876C /* libRestKit.a in Frameworks */,
 				13645B861897CCD7003D8526 /* Security.framework in Frameworks */,
 				13645B841897CCCE003D8526 /* MobileCoreServices.framework in Frameworks */,
 				13645B821897CCC5003D8526 /* CoreData.framework in Frameworks */,
@@ -219,6 +169,7 @@
 				136459371897C6C9003D8526 /* CoreGraphics.framework in Frameworks */,
 				136459391897C6C9003D8526 /* UIKit.framework in Frameworks */,
 				136459351897C6C9003D8526 /* Foundation.framework in Frameworks */,
+				8F0EFC45604C3B10DA7E670D /* libPods-RestKitTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +180,7 @@
 				136459541897C6C9003D8526 /* XCTest.framework in Frameworks */,
 				136459561897C6C9003D8526 /* UIKit.framework in Frameworks */,
 				136459551897C6C9003D8526 /* Foundation.framework in Frameworks */,
+				2EB13DB8F1F5F90E34BCE4C1 /* libPods-RestKitTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +200,12 @@
 		136459281897C6C9003D8526 = {
 			isa = PBXGroup;
 			children = (
-				13EB66B518A3986A009D876C /* vendors */,
 				13EB66AF18A39626009D876C /* resourses */,
 				1364593A1897C6C9003D8526 /* RestKitTest */,
 				136459591897C6C9003D8526 /* RestKitTestTests */,
 				136459331897C6C9003D8526 /* Frameworks */,
 				136459321897C6C9003D8526 /* Products */,
+				22440350598720C690D1B506 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,6 +230,8 @@
 				136459361897C6C9003D8526 /* CoreGraphics.framework */,
 				136459381897C6C9003D8526 /* UIKit.framework */,
 				136459531897C6C9003D8526 /* XCTest.framework */,
+				CB294A5C36FC56E09DBB2A3B /* libPods-RestKitTest.a */,
+				A3B6622048DEB2E230181BE7 /* libPods-RestKitTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,6 +300,8 @@
 				136459CC1897C76A003D8526 /* MappingFactory.m */,
 				138BFA8418A8938F00663195 /* EasyMappingFactory.h */,
 				138BFA8518A8938F00663195 /* EasyMappingFactory.m */,
+				49BBFF4B1DEEC4E500C54310 /* EKObjectMapping+RKTCategory.h */,
+				49BBFF4C1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -402,65 +358,6 @@
 			path = resourses;
 			sourceTree = "<group>";
 		};
-		13EB66B518A3986A009D876C /* vendors */ = {
-			isa = PBXGroup;
-			children = (
-				13EB66B618A3986A009D876C /* easymapping */,
-				13EB673B18A3986B009D876C /* restkit */,
-			);
-			path = vendors;
-			sourceTree = "<group>";
-		};
-		13EB66B618A3986A009D876C /* easymapping */ = {
-			isa = PBXGroup;
-			children = (
-				13EB6AE318A39882009D876C /* EasyMapping */,
-			);
-			path = easymapping;
-			sourceTree = "<group>";
-		};
-		13EB673B18A3986B009D876C /* restkit */ = {
-			isa = PBXGroup;
-			children = (
-				13EB6AFB18A39892009D876C /* RestKit.xcodeproj */,
-			);
-			path = restkit;
-			sourceTree = "<group>";
-		};
-		13EB6AE318A39882009D876C /* EasyMapping */ = {
-			isa = PBXGroup;
-			children = (
-				13EB6AE418A39882009D876C /* EasyMapping.h */,
-				13EB6AE518A39882009D876C /* EKFieldMapping.h */,
-				13EB6AE618A39882009D876C /* EKFieldMapping.m */,
-				13EB6AE718A39882009D876C /* EKManagedObjectMapping.h */,
-				13EB6AE818A39882009D876C /* EKManagedObjectMapping.m */,
-				13EB6AE918A39882009D876C /* EKMapper.h */,
-				13EB6AEA18A39883009D876C /* EKMapper.m */,
-				13EB6AEB18A39883009D876C /* EKMappingBlocks.h */,
-				13EB6AEC18A39883009D876C /* EKObjectMapping.h */,
-				13EB6AED18A39883009D876C /* EKObjectMapping.m */,
-				13EB6AEE18A39883009D876C /* EKPropertyHelper.h */,
-				13EB6AEF18A39883009D876C /* EKPropertyHelper.m */,
-				13EB6AF018A39883009D876C /* EKSerializer.h */,
-				13EB6AF118A39883009D876C /* EKSerializer.m */,
-				13EB6AF218A39883009D876C /* EKTransformer.h */,
-				13EB6AF318A39883009D876C /* EKTransformer.m */,
-			);
-			path = EasyMapping;
-			sourceTree = "<group>";
-		};
-		13EB6AFC18A39892009D876C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13EB6B0318A39893009D876C /* libRestKit.a */,
-				13EB6B0518A39893009D876C /* RestKitTests.octest */,
-				13EB6B0718A39893009D876C /* RestKit.framework */,
-				13EB6B0918A39893009D876C /* RestKitFrameworkTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		13EB6B2018A3A399009D876C /* parsingoperations */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +373,17 @@
 			path = parsingoperations;
 			sourceTree = "<group>";
 		};
+		22440350598720C690D1B506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5376A9F1A6371AF1967DA9FC /* Pods-RestKitTest.debug.xcconfig */,
+				E5DAFBE12BBD746D2C95D502 /* Pods-RestKitTest.release.xcconfig */,
+				81D6738EC917B2C19DAC7A04 /* Pods-RestKitTestTests.debug.xcconfig */,
+				9C85B8ACBBCC7CA8A475865B /* Pods-RestKitTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,14 +391,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 136459631897C6C9003D8526 /* Build configuration list for PBXNativeTarget "RestKitTest" */;
 			buildPhases = (
+				066FB787F8A99AEBE50C6D4B /* [CP] Check Pods Manifest.lock */,
 				1364592D1897C6C9003D8526 /* Sources */,
 				1364592E1897C6C9003D8526 /* Frameworks */,
 				1364592F1897C6C9003D8526 /* Resources */,
+				8FE655DE31164E892C437CFE /* [CP] Embed Pods Frameworks */,
+				21104EFDD764EC728E4F0226 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				13EB6B0D18A398AF009D876C /* PBXTargetDependency */,
 			);
 			name = RestKitTest;
 			productName = RestKitTest;
@@ -501,9 +411,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 136459661897C6C9003D8526 /* Build configuration list for PBXNativeTarget "RestKitTestTests" */;
 			buildPhases = (
+				238AC38C5E2DB15C78D4BA74 /* [CP] Check Pods Manifest.lock */,
 				1364594E1897C6C9003D8526 /* Sources */,
 				1364594F1897C6C9003D8526 /* Frameworks */,
 				136459501897C6C9003D8526 /* Resources */,
+				84A2676AEA7535F4D40D1AF4 /* [CP] Embed Pods Frameworks */,
+				1937003B2CAF26B6BF52C991 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -522,7 +435,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RKT;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Andrew Romanov";
 				TargetAttributes = {
 					136459301897C6C9003D8526 = {
@@ -544,12 +457,6 @@
 			mainGroup = 136459281897C6C9003D8526;
 			productRefGroup = 136459321897C6C9003D8526 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 13EB6AFC18A39892009D876C /* Products */;
-					ProjectRef = 13EB6AFB18A39892009D876C /* RestKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				136459301897C6C9003D8526 /* RestKitTest */,
@@ -557,37 +464,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		13EB6B0318A39893009D876C /* libRestKit.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRestKit.a;
-			remoteRef = 13EB6B0218A39893009D876C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13EB6B0518A39893009D876C /* RestKitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RestKitTests.xctest;
-			remoteRef = 13EB6B0418A39893009D876C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13EB6B0718A39893009D876C /* RestKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RestKit.framework;
-			remoteRef = 13EB6B0618A39893009D876C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		13EB6B0918A39893009D876C /* RestKitFrameworkTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RestKitFrameworkTests.xctest;
-			remoteRef = 13EB6B0818A39893009D876C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1364592F1897C6C9003D8526 /* Resources */ = {
@@ -612,6 +488,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		066FB787F8A99AEBE50C6D4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1937003B2CAF26B6BF52C991 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestKitTestTests/Pods-RestKitTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21104EFDD764EC728E4F0226 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestKitTest/Pods-RestKitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		238AC38C5E2DB15C78D4BA74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84A2676AEA7535F4D40D1AF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestKitTestTests/Pods-RestKitTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE655DE31164E892C437CFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RestKitTest/Pods-RestKitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1364592D1897C6C9003D8526 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -621,35 +590,29 @@
 				13645AF51897C772003D8526 /* MEActivityCommentProfile.m in Sources */,
 				13645B021897C772003D8526 /* MEActivityUserProfile.m in Sources */,
 				13645B1F1897C772003D8526 /* MEPhotoSize.m in Sources */,
-				13EB6AF818A39883009D876C /* EKPropertyHelper.m in Sources */,
 				132DA96218A50DD400BC3F95 /* RKTRestKitParsing.m in Sources */,
 				1364594B1897C6C9003D8526 /* RKTViewController.m in Sources */,
 				132DA96518A5120800BC3F95 /* RKTParsingOperator.m in Sources */,
 				132DA95C18A50CF500BC3F95 /* BlocksHelper.m in Sources */,
 				138BFA8318A88BCF00663195 /* RKTHandParsing.m in Sources */,
 				13645AFE1897C772003D8526 /* MEActivityObjectsList.m in Sources */,
-				13EB6AF918A39883009D876C /* EKSerializer.m in Sources */,
 				138BFA8918A8988A00663195 /* RKTEasyMappingParsing.m in Sources */,
 				13645AFB1897C772003D8526 /* MEActivityObjectPollPhoto.m in Sources */,
-				13EB6AFA18A39883009D876C /* EKTransformer.m in Sources */,
 				132DA96818A5122A00BC3F95 /* RKTParsingResult.m in Sources */,
 				13EB6B1D18A39AFB009D876C /* RKTSourceProvider.m in Sources */,
-				13EB6AF618A39883009D876C /* EKMapper.m in Sources */,
-				13EB6AF518A39883009D876C /* EKManagedObjectMapping.m in Sources */,
 				13645AF41897C772003D8526 /* MEActivityCommentMention.m in Sources */,
 				138BFA8618A8938F00663195 /* EasyMappingFactory.m in Sources */,
-				13EB6AF418A39883009D876C /* EKFieldMapping.m in Sources */,
 				13645AFA1897C772003D8526 /* MEActivityObjectPoll.m in Sources */,
 				13645AF91897C772003D8526 /* MEActivityObjectPhotoTag.m in Sources */,
 				13EB6B2318A3A651009D876C /* RKTJsonViewController.m in Sources */,
 				13645AF71897C772003D8526 /* MEActivityObject.m in Sources */,
 				136459451897C6C9003D8526 /* RKTAppDelegate.m in Sources */,
-				13EB6AF718A39883009D876C /* EKObjectMapping.m in Sources */,
 				13645B031897C772003D8526 /* MEAPIError.m in Sources */,
 				13645AE31897C772003D8526 /* MappingFactory.m in Sources */,
 				13645AF21897C772003D8526 /* MEActivityComment.m in Sources */,
 				13EB6B2818A3ABA6009D876C /* RKTParsingOperationBase.m in Sources */,
 				13645B291897C772003D8526 /* MEServerResponse.m in Sources */,
+				49BBFF4D1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m in Sources */,
 				136459411897C6C9003D8526 /* main.m in Sources */,
 				13645B8D1897CEB3003D8526 /* Memory.m in Sources */,
 			);
@@ -670,11 +633,6 @@
 			isa = PBXTargetDependency;
 			target = 136459301897C6C9003D8526 /* RestKitTest */;
 			targetProxy = 136459571897C6C9003D8526 /* PBXContainerItemProxy */;
-		};
-		13EB6B0D18A398AF009D876C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RestKit;
-			targetProxy = 13EB6B0C18A398AF009D876C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -702,7 +660,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -712,13 +669,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -731,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -741,7 +704,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -751,20 +713,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -772,56 +739,62 @@
 		};
 		136459641897C6C9003D8526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5376A9F1A6371AF1967DA9FC /* Pods-RestKitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BNNY5D4LGB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "RestKitTest/RestKitTest-Info.plist";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"$(OTHER_CFLAGS)",
+				);
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-all_load",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		136459651897C6C9003D8526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DAFBE12BBD746D2C95D502 /* Pods-RestKitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BNNY5D4LGB;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "RestKitTest/RestKitTest-Info.plist";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"$(OTHER_CFLAGS)",
+				);
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-all_load",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		136459671897C6C9003D8526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D6738EC917B2C19DAC7A04 /* Pods-RestKitTestTests.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RestKitTest.app/RestKitTest";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -835,6 +808,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "RestKitTestTests/RestKitTestTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -843,8 +817,8 @@
 		};
 		136459681897C6C9003D8526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C85B8ACBBCC7CA8A475865B /* Pods-RestKitTestTests.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RestKitTest.app/RestKitTest";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -854,6 +828,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitTest/RestKitTest-Prefix.pch";
 				INFOPLIST_FILE = "RestKitTestTests/RestKitTestTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

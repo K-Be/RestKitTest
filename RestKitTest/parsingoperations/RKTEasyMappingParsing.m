@@ -8,6 +8,7 @@
 
 #import "RKTEasyMappingParsing.h"
 #import "EasyMappingFactory.h"
+#import "EKObjectMapping+RKTCategory.h"
 
 
 @interface RKTEasyMappingParsing ()
@@ -23,7 +24,7 @@
 {
 	EKObjectMapping* responseMapping = [EasyMappingFactory mappingForClass:[MEServerResponse class]];
 	EKObjectMapping* objectsMapping = [EasyMappingFactory mappingForClass:[MEActivityObjectsList class]];
-	[responseMapping hasOneMapping:objectsMapping forKey:@"data"];
+	[responseMapping rkt_hasOne:objectsMapping forKeyPath:@"data"];
 	self.mapping = responseMapping;
 }
 

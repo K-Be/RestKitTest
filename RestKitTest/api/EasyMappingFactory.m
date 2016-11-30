@@ -7,6 +7,8 @@
 //
 
 #import "EasyMappingFactory.h"
+#import "EKObjectMapping+RKTCategory.h"
+
 
 @interface EasyMappingFactory (Private)
 
@@ -104,9 +106,9 @@
 																											@"countNotifies" : @"countNotifies",
 																											@"countMessages" : @"countMessages",
 																											@"version" : @"version"};
-																	 [mapping mapFieldsFromDictionary:properties];
+																	 [mapping mapPropertiesFromDictionary:properties];
 																	 EKObjectMapping* errorMapping = [self mappingForServerError];
-																	 [mapping hasOneMapping:errorMapping forKey:@"error"];
+																	 [mapping rkt_hasOne:errorMapping	forKeyPath:@"error"];
 																 }];
 	return map;
 }
@@ -118,7 +120,7 @@
 																 withBlock:^(EKObjectMapping *mapping) {
 																	 NSDictionary* properties = @{@"code": @"errorCode",
 																											@"message" : @"message"};
-																	 [mapping mapFieldsFromDictionary:properties];
+																	 [mapping mapPropertiesFromDictionary:properties];
 																 }];
 	return map;
 }
@@ -129,7 +131,7 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEPhotoSize class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"width", @"height"];
-																		  [mapping mapFieldsFromArray:attributes];
+																			[mapping mapPropertiesFromArray:attributes];
 																	  }];
 	return mapping;
 }
@@ -140,9 +142,9 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityCommentProfile class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"avatar", @"firstName", @"lastName", @"nickName"];
-																		  [mapping mapFieldsFromArray:attributes];
+																			[mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id": @"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
+																			[mapping mapPropertiesFromDictionary:redirection];
 																	  }];
 	return mapping;
 }
@@ -153,9 +155,9 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityUserProfile class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"avatar", @"firstName", @"lastName", @"nickName", @"role", @"page"];
-																		  [mapping mapFieldsFromArray:attributes];
+																			[mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id": @"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
+																			[mapping mapPropertiesFromDictionary:redirection];
 																	  }];
 	return mapping;
 }
@@ -166,9 +168,9 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityObjectPhotoTag class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"type", @"x", @"y", @"clothesTypeName", @"brandName", @"price", @"countLikes", @"isLiked"];
-																		  [mapping mapFieldsFromArray:attributes];
+																		  [mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id": @"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
+																		  [mapping mapPropertiesFromDictionary:redirection];
 																	  }];
 	return mapping;
 }
@@ -179,11 +181,11 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityComment class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"date", @"comment", @"countLikes", @"isLiked"];
-																		  [mapping mapFieldsFromArray:attributes];
+																		  [mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id": @"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
-																		  [mapping hasOneMapping:[self mappingForActivityCommentProfile] forKey:@"user"];
-																		  [mapping hasManyMapping:[self mappingForActivityCommentMention] forKey:@"mentions"];
+																		  [mapping mapPropertiesFromDictionary:redirection];
+																			[mapping rkt_hasOne:[self mappingForActivityCommentProfile] forKeyPath:@"user"];
+																			[mapping rkt_hasMany:[self mappingForActivityCommentMention] forKeyPath:@"mentions"];
 																	  }];
 	return mapping;
 }
@@ -194,7 +196,7 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityCommentMention class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"position", @"length", @"userId"];
-																		  [mapping mapFieldsFromArray:attributes];
+																		  [mapping mapPropertiesFromArray:attributes];
 																	  }];
 	return mapping;
 }
@@ -205,12 +207,11 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityObjectPollPhoto class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"url", @"urlSmall", @"countVotes"];
-																		  [mapping mapFieldsFromArray:attributes];
+																		  [mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id": @"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
-																		  [mapping hasOneMapping:[self mappingForPhotoSize] forKey:@"size"];
-																		  [mapping hasManyMapping:[self mappingForActivityObjectPhotoTag]
-																								 forKey:@"tags"];
+																		  [mapping mapPropertiesFromDictionary:redirection];
+																			[mapping rkt_hasOne:[self mappingForPhotoSize] forKeyPath:@"size"];
+																			[mapping rkt_hasMany:[self mappingForActivityObjectPhotoTag] forKeyPath:@"tags"];
 																	  }];
 	return mapping;
 }
@@ -221,12 +222,12 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityObjectPoll class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"message", @"countComments", @"countVotes", @"ownerChoice", @"myChoice", @"showResults", @"isClosed", @"stickerId", @"stickerCaption", @"stickerUserId"];
-																		  [mapping mapFieldsFromArray:attributes];
+																		  [mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id":@"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
-																		  [mapping hasManyMapping:[self mappingForActivityComment] forKey:@"comments"];
-																		  [mapping hasManyMapping:[self mappingForActivityObjectPollPhoto] forKey:@"photos"];
-																		  [mapping hasManyMapping:[self mappingForActivityCommentMention] forKey:@"mentions"];
+																		  [mapping mapPropertiesFromDictionary:redirection];
+																		  [mapping rkt_hasMany:[self mappingForActivityComment] forKeyPath:@"comments"];
+																		  [mapping rkt_hasMany:[self mappingForActivityObjectPollPhoto] forKeyPath:@"photos"];
+																		  [mapping rkt_hasMany:[self mappingForActivityCommentMention] forKeyPath:@"mentions"];
 																	  }];
 	return mapping;
 }
@@ -237,13 +238,14 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityObjectPhoto class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"url", @"urlSmall", @"message", @"countComments", @"countLikes", @"isLiked", @"shopUrl", @"stickerId", @"stickerCaption", @"stickerUserId"];
-																		  [mapping mapFieldsFromArray:attributes];
+																		  [mapping mapPropertiesFromArray:attributes];
 																		  NSDictionary* redirection = @{@"id": @"uid"};
-																		  [mapping mapFieldsFromDictionary:redirection];
-																		  [mapping hasOneMapping:[self mappingForPhotoSize] forKey:@"size"];
-																		  [mapping hasManyMapping:[self mappingForActivityComment] forKey:@"comments"];
-																		  [mapping hasManyMapping:[self mappingForActivityObjectPhotoTag] forKey:@"tags"];
-																		  [mapping hasManyMapping:[self mappingForActivityCommentMention] forKey:@"mentions"];
+																		  [mapping mapPropertiesFromDictionary:redirection];
+																			
+																		  [mapping rkt_hasOne:[self mappingForPhotoSize] forKeyPath:@"size"];
+																		  [mapping rkt_hasMany:[self mappingForActivityComment] forKeyPath:@"comments"];
+																		  [mapping rkt_hasMany:[self mappingForActivityObjectPhotoTag] forKeyPath:@"tags"];
+																		  [mapping rkt_hasMany:[self mappingForActivityCommentMention] forKeyPath:@"mentions"];
 																	  }];
 	return mapping;
 }
@@ -256,10 +258,10 @@
 																		  NSDictionary* redirection = @{@"id": @"uid",
 																												  @"date": @"dateTime",
 																												  @"type": @"typeString"};
-																		  [mapping mapFieldsFromDictionary:redirection];
-																		  [mapping hasOneMapping:[self mappingForActivityUserProfile] forKey:@"profile"];
-																		  [mapping hasOneMapping:[self mappingForActivityObjectPhoto] forKey:@"objectPhoto"];
-																		  [mapping hasOneMapping:[self mappingForActivityObjectPoll] forKey:@"objectPoll"];
+																		  [mapping mapPropertiesFromDictionary:redirection];
+																		  [mapping rkt_hasOne:[self mappingForActivityUserProfile] forKeyPath:@"profile"];
+																		  [mapping rkt_hasOne:[self mappingForActivityObjectPhoto] forKeyPath:@"objectPhoto"];
+																		  [mapping rkt_hasOne:[self mappingForActivityObjectPoll] forKeyPath:@"objectPoll"];
 																	  }];
 	return mapping;
 }
@@ -270,8 +272,8 @@
 	EKObjectMapping* mapping = [EKObjectMapping mappingForClass:[MEActivityObjectsList class]
 																	  withBlock:^(EKObjectMapping *mapping) {
 																		  NSArray* attributes = @[@"last", @"countResults"];
-																		  [mapping mapFieldsFromArray:attributes];
-																		  [mapping hasManyMapping:[self mappingForActivityObject] forKey:@"objects"];
+																		  [mapping mapPropertiesFromArray:attributes];
+																		  [mapping rkt_hasMany:[self mappingForActivityObject] forKeyPath:@"objects"];
 																	  }];
 	return mapping;
 }
