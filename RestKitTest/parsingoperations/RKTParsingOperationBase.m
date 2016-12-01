@@ -44,7 +44,10 @@
 {
 	if (![self isCancelled])
 	{
+		NSDate* preparingModelStartDate = [NSDate date];
 		[self _prepareMappingModel];
+		NSDate* preparingEndDate = [NSDate date];
+		NSLog(@"preparing time for %@ is %f", NSStringFromClass([self class]), [preparingEndDate timeIntervalSinceDate:preparingModelStartDate]);
 		
 		if (_numberOfAttempts > 0)
 		{

@@ -54,6 +54,8 @@
 		13EB6B2518A3A662009D876C /* RKTJsonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */; };
 		13EB6B2818A3ABA6009D876C /* RKTParsingOperationBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */; };
 		2EB13DB8F1F5F90E34BCE4C1 /* libPods-RestKitTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B6622048DEB2E230181BE7 /* libPods-RestKitTestTests.a */; };
+		49731A1E1DEFDE9100BBD05C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49731A1D1DEFDE9100BBD05C /* main.m */; };
+		49731A221DEFDEBF00BBD05C /* jsonData.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 13EB66B018A39626009D876C /* jsonData.json */; };
 		49BBFF4D1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BBFF4C1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m */; };
 		8F0EFC45604C3B10DA7E670D /* libPods-RestKitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB294A5C36FC56E09DBB2A3B /* libPods-RestKitTest.a */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,19 @@
 			remoteInfo = RestKitTest;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49731A191DEFDE9100BBD05C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = resources;
+			dstSubfolderSpec = 16;
+			files = (
+				49731A221DEFDEBF00BBD05C /* jsonData.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		132DA95A18A50CF500BC3F95 /* BlocksHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksHelper.h; sourceTree = "<group>"; };
@@ -146,6 +161,8 @@
 		13EB6B2418A3A662009D876C /* RKTJsonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RKTJsonViewController.xib; sourceTree = "<group>"; };
 		13EB6B2618A3ABA6009D876C /* RKTParsingOperationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTParsingOperationBase.h; sourceTree = "<group>"; };
 		13EB6B2718A3ABA6009D876C /* RKTParsingOperationBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTParsingOperationBase.m; sourceTree = "<group>"; };
+		49731A1B1DEFDE9100BBD05C /* RKTJSonCut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RKTJSonCut; sourceTree = BUILT_PRODUCTS_DIR; };
+		49731A1D1DEFDE9100BBD05C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49BBFF4B1DEEC4E500C54310 /* EKObjectMapping+RKTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EKObjectMapping+RKTCategory.h"; sourceTree = "<group>"; };
 		49BBFF4C1DEEC4E600C54310 /* EKObjectMapping+RKTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EKObjectMapping+RKTCategory.m"; sourceTree = "<group>"; };
 		5376A9F1A6371AF1967DA9FC /* Pods-RestKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestKitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RestKitTest/Pods-RestKitTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +201,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49731A181DEFDE9100BBD05C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -203,6 +227,7 @@
 				13EB66AF18A39626009D876C /* resourses */,
 				1364593A1897C6C9003D8526 /* RestKitTest */,
 				136459591897C6C9003D8526 /* RestKitTestTests */,
+				49731A1C1DEFDE9100BBD05C /* RKTJSonCut */,
 				136459331897C6C9003D8526 /* Frameworks */,
 				136459321897C6C9003D8526 /* Products */,
 				22440350598720C690D1B506 /* Pods */,
@@ -214,6 +239,7 @@
 			children = (
 				136459311897C6C9003D8526 /* RestKitTest.app */,
 				136459521897C6C9003D8526 /* RestKitTestTests.xctest */,
+				49731A1B1DEFDE9100BBD05C /* RKTJSonCut */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -384,6 +410,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		49731A1C1DEFDE9100BBD05C /* RKTJSonCut */ = {
+			isa = PBXGroup;
+			children = (
+				49731A1D1DEFDE9100BBD05C /* main.m */,
+			);
+			path = RKTJSonCut;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,6 +462,23 @@
 			productReference = 136459521897C6C9003D8526 /* RestKitTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		49731A1A1DEFDE9100BBD05C /* RKTJSonCut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49731A211DEFDE9100BBD05C /* Build configuration list for PBXNativeTarget "RKTJSonCut" */;
+			buildPhases = (
+				49731A171DEFDE9100BBD05C /* Sources */,
+				49731A181DEFDE9100BBD05C /* Frameworks */,
+				49731A191DEFDE9100BBD05C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RKTJSonCut;
+			productName = RKTJSonCut;
+			productReference = 49731A1B1DEFDE9100BBD05C /* RKTJSonCut */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -443,6 +494,11 @@
 					};
 					136459511897C6C9003D8526 = {
 						TestTargetID = 136459301897C6C9003D8526;
+					};
+					49731A1A1DEFDE9100BBD05C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = BNNY5D4LGB;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -461,6 +517,7 @@
 			targets = (
 				136459301897C6C9003D8526 /* RestKitTest */,
 				136459511897C6C9003D8526 /* RestKitTestTests */,
+				49731A1A1DEFDE9100BBD05C /* RKTJSonCut */,
 			);
 		};
 /* End PBXProject section */
@@ -623,6 +680,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				136459601897C6C9003D8526 /* RestKitTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49731A171DEFDE9100BBD05C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49731A1E1DEFDE9100BBD05C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +900,41 @@
 			};
 			name = Release;
 		};
+		49731A1F1DEFDE9100BBD05C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		49731A201DEFDE9100BBD05C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BNNY5D4LGB;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -864,6 +964,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		49731A211DEFDE9100BBD05C /* Build configuration list for PBXNativeTarget "RKTJSonCut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49731A1F1DEFDE9100BBD05C /* Debug */,
+				49731A201DEFDE9100BBD05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

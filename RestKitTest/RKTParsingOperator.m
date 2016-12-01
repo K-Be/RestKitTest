@@ -45,7 +45,13 @@
 	_easyMappingParsing.delegate = self;
 	
 	[self.queue addOperation:_handParsing];
+	[self.queue addOperationWithBlock:^{
+		[NSThread sleepForTimeInterval:1.0];
+	}];
 	[self.queue addOperation:_easyMappingParsing];
+	[self.queue addOperationWithBlock:^{
+		[NSThread sleepForTimeInterval:1.0];
+	}];
 	[self.queue addOperation:_parsingRestKit];
 }
 
